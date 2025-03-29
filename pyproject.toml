@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "task_api"
+version = "1.0.0"
+description = "API REST to track management made with Flask y SQLAlchemy"
+authors = ["juancamilowong"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.3"
+flask-sqlalchemy = "^3.0"
+flask-migrate = "^4.0"
+pytest = "^7.2"
+flask-cors = "^4.0.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^3.0.0"
+black = "^24.0.0"
+isort = "^5.12.0"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "import-outside-toplevel",
+    "too-few-public-methods",
+    "logging-fstring-interpolation",
+    "logging-not-lazy"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

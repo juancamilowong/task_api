@@ -1,0 +1,8 @@
+flask
+flask-SQLAlchemy
+flask-Migrate
+flask-cors
+pylint
+black
+isort
+pylint
