@@ -14,6 +14,7 @@ API for task management
     - [Get task by status:](#get-task-by-status)
     - [Update task:](#update-task)
     - [Delete task:](#delete-task)
+  - [Contributors](#contributors)
 
 ## Prerequisites
 
@@ -73,3 +74,7 @@ curl --location --request PUT 'http://127.0.0.1:5000/api/tasks/3' \
 ```
 curl --location --request DELETE 'http://127.0.0.1:5000/api/tasks/2'
 ```
+
+## Contributors
+
+- [@juancamilowong](https://www.github.com/juancamilowong)
