@@ -1,5 +1,5 @@
 # task_api
-API for task management
+Task api builded using Flask + SQLAlchemy + Mysql
 
 - [task\_api](#task_api)
   - [Prerequisites](#prerequisites)
