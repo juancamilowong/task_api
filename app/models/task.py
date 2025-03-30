@@ -12,7 +12,7 @@ class Task(db.Model):
     """
     Represents task in a database.
 
-    Atributos:
+    Attributes:
         id (int): Identifier.
         description (str): Task decription.
         status (str): Task status (TODO, IN_PROGRESS, DONE).

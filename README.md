@@ -7,6 +7,7 @@ API for task management
     - [Install](#install)
     - [Run](#run)
     - [Debug](#debug)
+  - [Database Scripts](#database-scripts)
   - [Features](#features)
     - [Create task:](#create-task)
     - [Get all taks:](#get-all-taks)
@@ -39,6 +40,35 @@ poetry run flask --app app run
 ```
 poetry run flask --app app run --debug
 ```
+
+## Database Scripts
+```
+CREATE TABLE tasksDB.task (
+	id INTEGER auto_increment NOT NULL,
+	description varchar(255) NOT NULL,
+	status varchar(100) NULL,
+	created_at DATE NULL,
+	updated_at DATE NULL,
+	CONSTRAINT task_PK PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE tasksDB.`user` (
+	id INTEGER auto_increment NOT NULL,
+	username varchar(100) NOT NULL,
+	password varchar(255) NOT NULL,
+	created_at DATE NULL,
+	CONSTRAINT user_pk PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
+
+
+```
+
 
 ## Features
 ### Create task: 

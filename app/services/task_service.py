@@ -6,7 +6,7 @@ Define all the task management persistence.
 
 from datetime import datetime
 from app import db
-from app.models import Task
+from app.models.task import Task
 
 VALID_STATUS = ["TODO", "IN-PROGRESS", "DONE"]
 
